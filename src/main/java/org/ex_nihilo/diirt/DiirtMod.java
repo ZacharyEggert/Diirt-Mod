@@ -2,9 +2,6 @@ package org.ex_nihilo.diirt;
 
 import org.ex_nihilo.diirt.registries.BlockRegistry;
 import org.ex_nihilo.diirt.registries.ItemRegistry;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.core.registries.Registries;
