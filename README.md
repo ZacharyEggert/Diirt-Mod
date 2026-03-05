@@ -1,25 +1,35 @@
+# Diirt
 
-Installation information
-=======
+A NeoForge mod for Minecraft 1.21 that adds gravel-sounding variants of dirt, grass, and farmland with accelerated crop growth.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+## Blocks
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+### Diirt
+A dirt-like block with gravel sound effects. When exposed to light and adjacent to a vanilla Grass Block or Graass Block, it will naturally convert to Graass over time. Can be tilled with a hoe into Faarmland. Supports crops tagged `diirtmod:diirt_graass_placeable_crops`.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+### Graass
+A grass-like block with gravel sounds and biome-colored tinting. Functions like Diirt but already spread with grass. Can be tilled into Faarmland. Crops growing on Graass receive **double random ticks**, accelerating their growth.
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+### Faarmland
+A farmland-like block with gravel sounds. Behaves like vanilla farmland (dries out without nearby water, reverts to Diirt when dry with no crop above) but crops receive **double random ticks** when the block is moist. Supports standard crops and crops tagged `diirtmod:faarmland_placeable_crops`.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## Tags
+
+| Tag | Used By |
+|-----|---------|
+| `diirtmod:diirt_graass_placeable_crops` | Crops that can grow on Diirt and Graass |
+| `diirtmod:faarmland_placeable_crops` | Crops that can only grow on Faarmland |
+
+## Build & Run
+
+```bash
+./gradlew build        # compile + package JAR
+./gradlew runClient    # launch Minecraft client with mod loaded
+./gradlew runServer    # launch dedicated server
+```
+
+## Requirements
+
+- Minecraft 1.21
+- NeoForge 21.0.167+
+- Java 21
