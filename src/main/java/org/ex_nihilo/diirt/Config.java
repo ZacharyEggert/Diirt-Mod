@@ -1,7 +1,5 @@
 package org.ex_nihilo.diirt;
 
-import java.util.List;
-
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.ModConfigSpec;
@@ -31,8 +29,8 @@ public class Config {
 
         static final ModConfigSpec SPEC = BUILDER.build();
 
-        private static boolean validateItemName(final Object obj) {
-                return obj instanceof String itemName
-                                && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
-        }
+//        private static boolean validateItemName(final Object obj) {
+//                return obj instanceof String itemName
+//                                && BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse(itemName));
+//        }
 }

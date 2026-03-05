@@ -6,15 +6,12 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BiomeColors;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.GrassColor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -33,7 +30,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 public class DiirtMod {
 
     public static final String MODID = "diirtmod";
-    public static final Logger LOGGER = LogUtils.getLogger();
+//    public static final Logger LOGGER = LogUtils.getLogger();
 
     public static final TagKey<Block> FAARMLAND_PLACEABLE_CROPS = TagKey.create(Registries.BLOCK,
             ResourceLocation.fromNamespaceAndPath(MODID, "faarmland_placeable_crops"));

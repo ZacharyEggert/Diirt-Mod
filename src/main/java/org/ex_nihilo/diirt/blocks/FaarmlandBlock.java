@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.util.TriState;
 import org.ex_nihilo.diirt.DiirtMod;
 import org.ex_nihilo.diirt.registries.BlockRegistry;
+import org.jetbrains.annotations.NotNull;
 
 @ParametersAreNonnullByDefault
 public class FaarmlandBlock extends FarmBlock {
@@ -22,7 +23,7 @@ public class FaarmlandBlock extends FarmBlock {
     }
 
     @Override
-    public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos, Direction facing, BlockState plant) {
+    public @NotNull TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos, Direction facing, BlockState plant) {
         return (plant.is(DiirtMod.FAARMLAND_PLACEABLE_CROPS) || plant.is(BlockTags.CROPS)) ? TriState.TRUE : TriState.FALSE;
     }
 

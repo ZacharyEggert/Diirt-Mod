@@ -24,6 +24,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.common.util.TriState;
+import org.jetbrains.annotations.NotNull;
 
 @ParametersAreNonnullByDefault
 public class FertileSoilBlock extends Block {
@@ -32,8 +33,8 @@ public class FertileSoilBlock extends Block {
     }
 
     @Override
-    public ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
-            Player player, InteractionHand hand, BlockHitResult hit) {
+    public @NotNull ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
+                                                    Player player, InteractionHand hand, BlockHitResult hit) {
         if (stack.canPerformAction(ItemAbilities.HOE_TILL) && level.getBlockState(pos.above()).isAir()) {
             level.playSound(player, pos, SoundEvents.HOE_TILL, SoundSource.BLOCKS, 1.0F, 1.0F);
             if (!level.isClientSide) {
@@ -46,8 +47,8 @@ public class FertileSoilBlock extends Block {
     }
 
     @Override
-    public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos, Direction facing,
-            BlockState plant) {
+    public @NotNull TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos, Direction facing,
+                                             BlockState plant) {
         return plant.is(DiirtMod.DIIRT_GRAASS_PLACEABLE_CROPS) ? TriState.TRUE : TriState.FALSE;
     }
 
