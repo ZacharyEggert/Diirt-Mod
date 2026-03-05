@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "moisture=0": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=1": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=2": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=3": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=4": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=5": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=6": { "model": "custommod:block/faarmland_block_model" },
+    "moisture=7": { "model": "custommod:block/faarmland_block_moist_model" }
+  }
+}
