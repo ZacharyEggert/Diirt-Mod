@@ -44,18 +44,18 @@ BlockRegistry.BLOCKS.register(modEventBus);
 
 ## Key Files
 
-| File | Purpose |
-|------|---------|
-| `src/main/java/org/ex_nihilo/custommod/CustomMod.java` | Mod entry point, event bus wiring |
-| `src/main/java/org/ex_nihilo/custommod/BlockRegistry.java` | Block DeferredRegister definitions |
-| `src/main/java/org/ex_nihilo/custommod/Config.java` | ModConfigSpec — typed, validated config |
-| `src/main/resources/assets/custommod/lang/en_us.json` | Localization strings |
-| `src/main/resources/META-INF/neoforge.mods.toml` | Mod metadata, dependency declarations (template — built by Gradle) |
-| `build.gradle` | NeoForge version, Parchment mappings, run configs |
-| `gradle.properties` | Mod ID, version, MC/NeoForge versions |
+| File                                                       | Purpose                                                            |
+|------------------------------------------------------------|--------------------------------------------------------------------|
+| `src/main/java/org/ex_nihilo/custommod/CustomMod.java`     | Mod entry point, event bus wiring                                  |
+| `src/main/java/org/ex_nihilo/custommod/BlockRegistry.java` | Block DeferredRegister definitions                                 |
+| `src/main/java/org/ex_nihilo/custommod/Config.java`        | ModConfigSpec — typed, validated config                            |
+| `src/main/resources/assets/custommod/lang/en_us.json`      | Localization strings                                               |
+| `src/main/resources/META-INF/neoforge.mods.toml`           | Mod metadata, dependency declarations (template — built by Gradle) |
+| `build.gradle`                                             | NeoForge version, Parchment mappings, run configs                  |
+| `gradle.properties`                                        | Mod ID, version, MC/NeoForge versions                              |
 
 ## Mod Info
 
-- **Mod ID:** `custommod`
+- **Mod ID:** `diirtmod`
 - **Package:** `org.ex_nihilo.diirt`
 - **Version:** 0.0.1
